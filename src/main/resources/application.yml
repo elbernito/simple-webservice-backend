@@ -1,0 +1,16 @@
+
+server:
+  port : ${BACKEND_PORT:9002}
+  frontend:
+    address: ${FRONTEND_ADDRESS:localhost}
+    port: ${FRONTEND_PORT:9000}
+  backend:
+    address: ${BACKEND_ADDRESS:localhost}
+    port: ${BACKEND_PORT:9002}
+  maven:
+    pom:
+      location: ${POM_LOCATION:./simple-webservice-backend/pom.xml}
+
+springdoc:
+  swagger-ui:
+    path: /swagger.html
